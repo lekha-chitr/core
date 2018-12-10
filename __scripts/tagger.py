@@ -8,6 +8,9 @@
   - Seprate English chars
 '''
 import sys, os
+from nltk.tokenize import sent_tokenize, word_tokenize
+from nltk.corpus import stopwords
+from nltk.probability import FreqDist
 
 
 def loadtext(_path):
@@ -15,16 +18,34 @@ def loadtext(_path):
     @Description : Get file from destination
                    read and return a list with data
     '''
-    data = []
+
+    stop_words = set(stopwords.words('english'))
+    punctuation = [',','.','/','<','>','?',';',':','[',']','{','}','`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=']
+    for p in punctuation:
+        stop_words.add(p)
+
+    word_list=[]
     for f in os.listdir(_path):
         file_path = os.path.join(_path,f)
-        reader = open(file_path, 'r')
-        for d in reader.read().split(" "):
-            data.append(d)
-    for a in data:
-        print(a)
-    print(len(data))
+        file = open(file_path)
+        file_data = file.read().lower()
+        word_list = word_list + word_tokenize(file_data)
+        print(f)
 
+    print(len(word_list))
+    filter_word=[]
+    for w in word_list:
+        if w not in stop_words:
+            filter_word.append(w)
+
+    fdist=  FreqDist(filter_word)
+    top_ten = fdist.most_common(10)
+    print(top_ten)
+
+    # for i,j in enumerate(fdist):
+    #    if i == 10:
+     #       break
+      #  print(j,fdist[j])
 
 
 # program Execution starts here
