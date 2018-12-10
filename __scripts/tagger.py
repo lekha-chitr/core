@@ -10,8 +10,8 @@
 import sys, os
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-from nltk.probability import FreqDist
-
+from nltk.probability import FreqDist, bigrams
+import string
 
 def loadtext(_path):
     '''
@@ -19,13 +19,13 @@ def loadtext(_path):
                    read and return a list with data
     '''
 
-    stop_words = set(stopwords.words('english'))
-    punctuation = [',','.','/','<','>','?',';',':','[',']','{','}','`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=']
-    for p in punctuation:
-        stop_words.add(p)
+    stop_words = stopwords.words('english') + list(string.punctuation) + ['also','us']
+    # punctuation = ['also'',','.','/','<','>','?',';',':','[',']','{','}','`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=']
+   # for p in punctuation:
+    #    stop_words.add(p)
 
     word_list=[]
-    for f in os.listdir(_path):
+    for f in os.listdir(_path)[:20]:
         file_path = os.path.join(_path,f)
         file = open(file_path)
         file_data = file.read().lower()
@@ -41,6 +41,7 @@ def loadtext(_path):
     fdist=  FreqDist(filter_word)
     top_ten = fdist.most_common(10)
     print(top_ten)
+    fdist.plot(10,cumulative=False)
 
     # for i,j in enumerate(fdist):
     #    if i == 10:
