@@ -4,9 +4,10 @@
 @Description : Tagging / seprating hindi and english data
 @Usages: tagger.py [Target Root folder] [ Destination folder ]
 @TODO:
-  - Fetch files from local storage
-  - Seprate English chars
+    - Adding custome crops for custom word filter
+    - Converting data to json format
 '''
+<<<<<<< HEAD
 # from matplotlib import pylab
 import sys, os
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -50,6 +51,11 @@ def loadtext(_path):
      #       break
       #  print(j,fdist[j])
 
+=======
+import sys
+import os
+from Util import loadtext, cleaner
+>>>>>>> 273c862123c34548a3203438a1e9cad587f6cd7c
 
 # program Execution starts here
 if __name__ == "__main__":
@@ -61,4 +67,5 @@ if __name__ == "__main__":
     dest_path = os.path.abspath(sys.argv[2])
 
     # load text for processing
-    loadtext(root_path)
+    data_list = loadtext(root_path)
+    clean_words = cleaner(data_list, lang="en")
