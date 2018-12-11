@@ -3,7 +3,7 @@ from multiprocessing import Pool
 # Nltk imports
 from nltk.corpus import stopwords, indian
 from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer
-import string 
+import string
 
 def cleaner(_big_data, lang=None):
     # Global stop words set
