@@ -7,7 +7,6 @@
     - Adding custome crops for custom word filter
     - Converting data to json format
 '''
-<<<<<<< HEAD
 # from matplotlib import pylab
 import sys, os
 from nltk.tokenize import sent_tokenize, word_tokenize
@@ -51,11 +50,6 @@ def loadtext(_path):
      #       break
       #  print(j,fdist[j])
 
-=======
-import sys
-import os
-from Util import loadtext, cleaner
->>>>>>> 273c862123c34548a3203438a1e9cad587f6cd7c
 
 # program Execution starts here
 if __name__ == "__main__":
