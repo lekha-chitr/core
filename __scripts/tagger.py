@@ -7,10 +7,12 @@
   - Fetch files from local storage
   - Seprate English chars
 '''
+# from matplotlib import pylab
 import sys, os
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.corpus import stopwords
-from nltk.probability import FreqDist, bigrams
+from nltk.probability import FreqDist
+# from nltk import bigrams
 import string
 
 def loadtext(_path):
@@ -25,23 +27,23 @@ def loadtext(_path):
     #    stop_words.add(p)
 
     word_list=[]
-    for f in os.listdir(_path)[:20]:
+    for f in os.listdir(_path):
         file_path = os.path.join(_path,f)
         file = open(file_path)
         file_data = file.read().lower()
         word_list = word_list + word_tokenize(file_data)
-        print(f)
+
 
     print(len(word_list))
     filter_word=[]
     for w in word_list:
         if w not in stop_words:
             filter_word.append(w)
-
-    fdist=  FreqDist(filter_word)
-    top_ten = fdist.most_common(10)
-    print(top_ten)
-    fdist.plot(10,cumulative=False)
+    print(len(filter_word))
+   # fdist=  FreqDist(filter_word)
+  #  top_ten = fdist.most_common(10)
+ #   print(top_ten)
+#    fdist.plot(10,cumulative=False)
 
     # for i,j in enumerate(fdist):
     #    if i == 10:
