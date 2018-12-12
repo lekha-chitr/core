@@ -42,7 +42,7 @@ def _reader(_file_path):
 
 def tokenizeWord(raw_data):
     '''
-    @Description : Tokenize word using nltk 
+    @Description : Tokenize word using nltk
                    Return list of words
     '''
     return word_tokenize(raw_data)
@@ -50,8 +50,8 @@ def tokenizeWord(raw_data):
 
 def cleanData(word_token):
     '''
-    @Description : Remove all stop word and punctuation 
-                   Return filtered string 
+    @Description : Remove all stop word and punctuation
+                   Return filtered string
     '''
     stop_words = stopwords.words(
         'english') + list(string.punctuation) + ['also', 'us', 'must', 'need']
@@ -66,7 +66,7 @@ def cleanData(word_token):
 def mostCommonWord(fitered_data, length):
     '''
     @Description : Take length of most common word
-                    Print most common words 
+                    Print most common words
 
     '''
     fdist = FreqDist(filtered_data)
