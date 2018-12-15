@@ -7,72 +7,10 @@
     - Adding custome crops for custom word filter
     - Converting data to json format
 '''
-
+# from matplotlib import pylab
 import sys
 import os
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
-from nltk.probability import FreqDist
-import string
-from multiprocessing import Pool
-
-
-def loadtext(_dir_path, limit=None):
-    '''
-    @Description : Get file from destination
-                   Return raw string having data of all files
-    '''
-    pool = Pool(4)
-    file_list = [os.path.join(_dir_path, f) for f in os.listdir(_dir_path)]
-    data_pool = pool.map(_reader,  file_list)
-    raw_data = ""
-    for data in data_pool:
-        raw_data += data
-    return raw_data
-
-
-def _reader(_file_path):
-    '''
-    @Description : Get file from destination
-                   Return string in lower case format
-    '''
-    file = open(_file_path, 'r', encoding="UTF-8")
-    return file.read().lower()
-
-
-def tokenizeWord(raw_data):
-    '''
-    @Description : Tokenize word using nltk
-                   Return list of words
-    '''
-    return word_tokenize(raw_data)
-
-
-def cleanData(word_token):
-    '''
-    @Description : Remove all stop word and punctuation
-                   Return filtered string
-    '''
-    stop_words = stopwords.words(
-        'english') + list(string.punctuation) + ['also', 'us', 'must', 'need']
-    filter_word = []
-    for w in word_token:
-        if w not in stop_words:
-            filter_word.append(w)
-
-    return filter_word
-
-
-def mostCommonWord(fitered_data, length):
-    '''
-    @Description : Take length of most common word
-                    Print most common words
-
-    '''
-    fdist = FreqDist(filtered_data)
-    mostCommon = fdist.most_common(length)
-    print(mostCommon)
-
+from Util import loadtext, cleaner, toJSON, en_check
 
 # program Execution starts here
 if __name__ == "__main__":
@@ -84,8 +22,29 @@ if __name__ == "__main__":
     dest_path = os.path.abspath(sys.argv[2])
 
     # load text for processing
-    raw_data = loadtext(root_path)
-    word_token = tokenizeWord(raw_data)
-    filtered_data = cleanData(word_token)
-    print(len(filtered_data))
-    mostCommonWord(filtered_data, 10)
+    data_list = loadtext(root_path)
+    clean_words = cleaner(data_list)
+    new_words = clean_words.split(" ")
+    en = {}
+    hn = {}
+    for i in new_words:
+        if en_check(i):
+            if i in en:
+                en[i] += 1
+            else:
+                en[i] = 1
+        else:
+            if i in hn:
+                hn[i] += 1
+            else:
+                hn[i] = 1
+
+    master = {
+        "meta": {
+            "total_english": len(en),
+            "total_hindi": len(hn)
+        },
+        "en": en,
+        "hn": hn
+    }
+    toJSON(master, dest_path)
