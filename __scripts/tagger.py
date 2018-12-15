@@ -8,48 +8,9 @@
     - Converting data to json format
 '''
 # from matplotlib import pylab
-import sys, os
-from nltk.tokenize import sent_tokenize, word_tokenize
-from nltk.corpus import stopwords
-from nltk.probability import FreqDist
-# from nltk import bigrams
-import string
-
-def loadtext(_path):
-    '''
-    @Description : Get file from destination
-                   read and return a list with data
-    '''
-
-    stop_words = stopwords.words('english') + list(string.punctuation) + ['also','us']
-    # punctuation = ['also'',','.','/','<','>','?',';',':','[',']','{','}','`','~','!','@','#','$','%','^','&','*','(',')','-','_','+','=']
-   # for p in punctuation:
-    #    stop_words.add(p)
-
-    word_list=[]
-    for f in os.listdir(_path):
-        file_path = os.path.join(_path,f)
-        file = open(file_path)
-        file_data = file.read().lower()
-        word_list = word_list + word_tokenize(file_data)
-
-
-    print(len(word_list))
-    filter_word=[]
-    for w in word_list:
-        if w not in stop_words:
-            filter_word.append(w)
-    print(len(filter_word))
-   # fdist=  FreqDist(filter_word)
-  #  top_ten = fdist.most_common(10)
- #   print(top_ten)
-#    fdist.plot(10,cumulative=False)
-
-    # for i,j in enumerate(fdist):
-    #    if i == 10:
-     #       break
-      #  print(j,fdist[j])
-
+import sys
+import os
+from Util import loadtext, cleaner, toJSON, en_check
 
 # program Execution starts here
 if __name__ == "__main__":
@@ -62,4 +23,28 @@ if __name__ == "__main__":
 
     # load text for processing
     data_list = loadtext(root_path)
-    clean_words = cleaner(data_list, lang="en")
+    clean_words = cleaner(data_list)
+    new_words = clean_words.split(" ")
+    en = {}
+    hn = {}
+    for i in new_words:
+        if en_check(i):
+            if i in en:
+                en[i] += 1
+            else:
+                en[i] = 1
+        else:
+            if i in hn:
+                hn[i] += 1
+            else:
+                hn[i] = 1
+
+    master = {
+        "meta": {
+            "total_english": len(en),
+            "total_hindi": len(hn)
+        },
+        "en": en,
+        "hn": hn
+    }
+    toJSON(master, dest_path)
