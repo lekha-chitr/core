@@ -1,0 +1,1080 @@
+<!doctype html>
+<html>
+    <head>
+        <!-- STYLES -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<link rel="icon" type="image/ico" href="https://staticmain.narendramodi.in/images/favicon.ico?v=1754" />
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/normalize.css?v=1754"/>
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/bootstrap.min.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/animate.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/owl.carousel.min.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/rippler.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/animsition.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/dynamic-slider.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/jquery.fancybox.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/jquery.fancybox-buttons.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/font-awesome.min.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/datepicker.min.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/feature-carousel.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/jquery-autocomplete-ui.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/prettyPhoto/css/prettyPhoto.css?v=1754">
+<!--merasankalp -->
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<!--merasankalp -->
+
+    <link rel="stylesheet" href="https://staticmain.narendramodi.in/css/flipping_gallery.css?v=1754">
+
+
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/nm_styles.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/nm_styles2.css?v=1754">
+<link rel="stylesheet" href="https://staticmain.narendramodi.in/css/style.css?v=1754">
+<link rel="publisher" href="https://plus.google.com/+NarendraModi" />
+
+<script src="https://staticmain.narendramodi.in/js/jquery-1.11.3.min.js?v=1754"></script>
+
+<script src="https://staticmain.narendramodi.in/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://staticmain.narendramodi.in/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://staticmain.narendramodi.in/js/owl.carousel.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/datepicker.min.js?v=1754"></script>
+
+<script type="text/javascript">
+    var JS_BASE_URL = 'https://www.narendramodi.in/'; 
+    var STATIC_URL = 'https://staticmain.narendramodi.in/';
+    var CLEVERTAP_ACCOUNT_ID = '4RR-W49-K84Z';
+    $(document).ready(function () {
+        var post_id = getParameterByName('post_id');
+
+        if (post_id != "") {
+            window.close();
+        }
+        var tweet_response = getParameterByName('tweet_response');
+        if (tweet_response == "success") {
+            window.close();
+        }
+        var bday = getCookie('referer_url_redirect_bday');
+        var cookieName = 'referer_url_redirect_bday'; 
+        if (bday == "referer_url_redirect_bday") {
+            deleteCookie(cookieName);
+            if (loggedUserEncId != '') {
+                getbdayredirect();
+            }
+        }
+    });
+</script>
+
+
+<div id="fb-root"></div>
+<script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=758877587523517";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-12426985-1', 'auto');
+    ga('send', 'pageview');
+
+
+    function setreferrerUrl() {
+        var referralUrl = window.location.href;
+        setCookie('referer_url_web', referralUrl, 1);
+    }
+    
+</script>
+
+<script src="https://staticmain.narendramodi.in/js/modernizr.min.js?v=1754"></script>
+
+<script src="https://staticmain.narendramodi.in/js/jquery.rippler.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/wow.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/smoothscroll.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.easing.1.3.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/tabulous.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.animsition.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.fancybox.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.fancybox-buttons.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.fancybox-media.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.dynamic-slider.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/preview.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/skrollr.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/app.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.featureCarousel.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.vgrid.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery-autocomplete-ui.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/validator.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/framework/bootstrap.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/valdate-form.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jwplayer.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.slimscroll.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.slimscroll.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.bxslider.min.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/prettyPhoto/js/jquery.prettyPhoto.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/jquery.flipping_gallery.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/scripts.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/imgLiquid.js?v=1754"></script>
+<script src="https://staticmain.narendramodi.in/js/nmPeoplescorner.js" type="text/javascript" charset="utf-8"></script>
+<script src="https://staticmain.narendramodi.in/js/html2canvas.js?v=1754"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+
+            </head>
+    <body>
+     <div class=""> 
+    <main>
+    <div class="wrapper">
+                 
+        <div class="nmapp-container">
+    <div class="appInner">
+        <div class="nmAppClose"></div>
+        <div class="nmAppImg"><a target="_blank" href="http://nm4.in/dnldapp"><img src="https://staticmain.narendramodi.in/images/nmApp_img.png" alt="Download NaMo App" width="40"></a></div>
+        <div class="nmAppdownloadBtn"><a target="_blank" href="http://nm4.in/dnldapp">Download app</a></div>
+    </div>
+</div>
+
+<header> 
+    <!--begin nav -->
+    <button type="button" id="animated-navicon" class="navbar-toggle2" data-toggle="collapse" data-target="#mobile-navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    <div class="logo">
+                    <a href="https://www.narendramodi.in/">Narendra <b>Modi</b></a>
+                </div>
+    <div class="right">
+        <div class="app">
+                            <a href="https://www.narendramodi.in/downloadapp">
+                    <span data-hover="Download App">Download App</span> &nbsp;<img   src="https://staticmain.narendramodi.in/images/appIcon.jpg"   alt="App Download"/>
+                </a>
+                    </div>
+            <div class="login">
+         
+            <a id="nmlogin" href="#" data-toggle="modal" onclick="LoginPopup()" data-target="#loginModal"><span data-hover="Login"><b>Login</b></span></a> / 
+            <a href="https://www.narendramodi.in/subscribe#signup"><span data-hover="Register">Register</span></a>
+            </div>
+
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content loginWithContent">
+            <div class=" pull-right">
+                <button title="Close" type="button" class="close loginClose" data-dismiss="modal" aria-hidden="true">X</button>
+            </div>
+            <div id="Login">
+                <div class="form-horizontal SignPopup">
+                    <form method="post" id="login_form">
+                        <h5  class="marginTop16">Login
+                            <div class="loading"></div>
+                        </h5>
+                        <div class="alert alert-danger" style="display: none"> </div>
+                        <div id="message" style="display: none"></div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="email_address">Email Id *</label>
+                            <div class="col-sm-8">
+                                <input type="text" id="email_address" name="LoginForm[user_email]" id="LoginForm_forsite" class="form-control email_address">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="password">Password *</label>
+                            <div class="col-sm-8">
+                                <input type="password" id="password" name="LoginForm[password]" class="form-control password"/>
+                                <input type="hidden" value="error" id="page_url" name="page_url" class="form-control email_add">
+                                <input type="hidden" value="" id="login_social_use">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label"  ></label>
+                            <div class="col-sm-8">
+                                <input type="checkbox" name="LoginForm[rememberMe]" />
+                                Remember Me </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label"></label>
+                            <div class="col-sm-8">
+                                <button id="login_button1" class="btn btn-warning btn-lg customLoginBtn" onclick="clevertapLogininfo();"> Login </button>
+                                <a href="javascript:void(0)" class="small" id="forgot">Forgot password?</a>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="otherOptions">
+                        <div class="login_or">OR</div>
+                    </div>
+                    <div align="center" class="loginOtherOptions"> <a  class="fb_login" href="javascript: void(0)"  onclick="javascript:window.open('https://www.narendramodi.in/user/signin/oauth?authclient=facebook', '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+                            return false;"> <img alt="Login with facebook" src="https://staticmain.narendramodi.in/images/login_with_fb_btn.png"/> 
+                        </a>
+                        <a href="javascript: void(0)" class="twt_login"   onclick="javascript:window.open('https://www.narendramodi.in/user/signin/oauth?authclient=twitter', '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+                                    return false;"> <img alt="Login with twitter" src="https://staticmain.narendramodi.in/images/login_with_twitter_btn.png"/> </a> </div>
+                    <div class="modal-footer loginsignupAnchor">
+<!--                        <p>New to the website? <a href="javascript:void(0)" onclick="SignupPopup()">Create New Account</a> </p>-->
+                        <p>New to the website? <a href="https://www.narendramodi.in/subscribe">Create New Account</a> 
+                    </div>
+                </div>
+            </div>
+            <div id="Forgot">
+                <div class="form-horizontal SignPopup">
+                    <h5 class="marginTop16">Forgot Password
+                        <div class="loading"></div>
+                    </h5>
+                    <div class="alert alert-danger" style="display: none"> </div>
+                    <div id="message_forgot" style="display: none"></div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="email_add">Email Id *</label>
+                        <div class="col-sm-8">
+                            <input type="text" id="email_add" name="user_email" class="form-control email_add">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label"></label>
+                        <div class="col-sm-8">
+                            <button id="login_button" onclick="forgotPassword();" class="btn btn-warning btn-lg customLoginBtn">Reset Password</button>
+
+                        </div>
+                    </div>
+                    <div class="otherOptions">
+                        <div class="login_or">OR</div>
+                    </div>
+                    <div align="center" class="loginOtherOptions">
+                        <a href="javascript: void(0)" class="fb_login" onclick="javascript:window.open('https://www.narendramodi.in/user/signin/oauth?authclient=facebook', '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+                                return false;"> <img alt="Login with facebook" src="https://staticmain.narendramodi.in/images/login_with_fb_btn.png"/> 
+                        </a> 
+                        <a href="javascript: void(0)" class="twt_login" onclick="javascript:window.open('https://www.narendramodi.in/user/signin/oauth?authclient=twitter', '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=400,width=600');
+                               return false;"> <img alt="Login with twitter" src="https://staticmain.narendramodi.in/images/login_with_twitter_btn.png"/> 
+                        </a>  
+                    </div>
+                    <div class="modal-footer loginsignupAnchor">
+<!--                        <p>New to the website? <a href="javascript:void(0)" onclick="SignupPopup()">Create New Account</a> </p>-->
+                        <p>New to the website? <a href="https://www.narendramodi.in/subscribe">Create New Account</a> 
+                    </div>
+                </div>
+            </div>
+            <div  id="sign_up" style="display:none;padding:10px 0px;">
+                <form method="post" id="form-signup" >
+                    <div class="form-horizontal SignPopup">
+                        <h5>Signup</h5>
+                        <h5 style="display:none" id="sb_newsletter">Signup</h5>
+                        <div class="form-group"></div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id9">Title *</label>
+                            <div class="col-sm-8">
+                                <select class="form-control" id="sign_up_id9" name="user_title">
+                                    <option value="">Please select</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Dr">Dr</option>
+                                    <option value="Prof">Prof</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id1">First Name *</label>
+                            <div class="col-sm-8">
+                                <input  type="text" id="sign_up_id1" name="first_name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id2">Last Name *</label>
+                            <div class="col-sm-8">
+                                <input  type="text" id="sign_up_id2" name="last_name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="user_email_reg">Email *</label>
+                            <div class="col-sm-8">
+                                <input  type="email" id="user_email_reg" name="email" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputPassword">Password *</label>
+                            <div class="col-sm-8">
+                                <input type="password"  id="inputPassword" name="user_password" class="form-control">
+                            </div> 
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id6">Confirm Password *</label>
+                            <div class="col-sm-8">
+                                <input  type="password" id="sign_up_id6" name="confirm_password" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id7">Phone Number *</label>
+                            <div class="col-sm-8">
+                                <div class="row">
+                                    <div class="col-sm-5">
+                                        <select  name="country_code" class="form-control">
+                                            <option value="">Select</option>
+                                            <option value="213">Algeria (+213)</option>
+                                            <option value="376">Andorra (+376)</option>
+                                            <option value="244">Angola (+244)</option>
+                                            <option value="1264">Anguilla (+1264)</option>
+                                            <option value="1268">Antigua &amp; Barbuda (+1268) </option>
+                                            <option value="599">Antilles(Dutch) (+599)</option>
+                                            <option value="54">Argentina (+54)</option>
+                                            <option value="374">Armenia (+374)</option>
+                                            <option value="297">Aruba (+297)</option>
+                                            <option value="247">Ascension Island (+247)</option>
+                                            <option value="61">Australia (+61)</option>
+                                            <option value="43">Austria (+43)</option>
+                                            <option value="994">Azerbaijan (+994)</option>
+                                            <option value="1242">Bahamas (+1242)</option>
+                                            <option value="973">Bahrain (+973)</option>
+                                            <option value="880">Bangladesh (+880)</option>
+                                            <option value="1246">Barbados (+1246)</option>
+                                            <option value="375">Belarus (+375)</option>
+                                            <option value="32">Belgium (+32)</option>
+                                            <option value="501">Belize (+501)</option>
+                                            <option value="229">Benin (+229)</option>
+                                            <option value="1441">Bermuda (+1441)</option>
+                                            <option value="975">Bhutan (+975)</option>
+                                            <option value="591">Bolivia (+591)</option>
+                                            <option value="387">Bosnia Herzegovina (+387)</option>
+                                            <option value="267">Botswana (+267)</option>
+                                            <option value="55">Brazil (+55)</option>
+                                            <option value="673">Brunei (+673)</option>
+                                            <option value="359">Bulgaria (+359)</option>
+                                            <option value="226">Burkina Faso (+226)</option>
+                                            <option value="257">Burundi (+257)</option>
+                                            <option value="855">Cambodia (+855)</option>
+                                            <option value="237">Cameroon (+237)</option>
+                                            <option value="11">Canada (+1)</option>
+                                            <option value="238">Cape Verde Islands (+238)</option>
+                                            <option value="1345">Cayman Islands (+1345)</option>
+                                            <option value="236">Central African Republic (+236)</option>
+                                            <option value="56">Chile (+56)</option>
+                                            <option value="86">China (+86)</option>
+                                            <option value="57">Colombia (+57)</option>
+                                            <option value="269">Comoros (+269)</option>
+                                            <option value="242">Congo (+242)</option>
+                                            <option value="682">Cook Islands (+682)</option>
+                                            <option value="506">Costa Rica (+506)</option>
+                                            <option value="385">Croatia (+385)</option>
+                                            <option value="53">Cuba (+53)</option>
+                                            <option value="90392">Cyprus North (+90392)</option>
+                                            <option value="357">Cyprus South (+357)</option>
+                                            <option value="42">Czech Republic (+42)</option>
+                                            <option value="45">Denmark (+45)</option>
+                                            <option value="2463">Diego Garcia (+2463)</option>
+                                            <option value="253">Djibouti (+253)</option>
+                                            <option value="1809">Dominica (+1809)</option>
+                                            <option value="1809">Dominican Republic (+1809)</option>
+                                            <option value="593">Ecuador (+593)</option>
+                                            <option value="20">Egypt (+20)</option>
+                                            <option value="353">Eire (+353)</option>
+                                            <option value="503">El Salvador (+503)</option>
+                                            <option value="240">Equatorial Guinea (+240)</option>
+                                            <option value="291">Eritrea (+291)</option>
+                                            <option value="372">Estonia (+372)</option>
+                                            <option value="251">Ethiopia (+251)</option>
+                                            <option value="500">Falkland Islands (+500)</option>
+                                            <option value="298">Faroe Islands (+298)</option>
+                                            <option value="679">Fiji (+679)</option>
+                                            <option value="358">Finland (+358)</option>
+                                            <option value="33">France (+33)</option>
+                                            <option value="594">French Guiana (+594)</option>
+                                            <option value="689">French Polynesia (+689)</option>
+                                            <option value="241">Gabon (+241)</option>
+                                            <option value="220">Gambia (+220)</option>
+                                            <option value="7880">Georgia (+7880)</option>
+                                            <option value="49">Germany (+49)</option>
+                                            <option value="233">Ghana (+233)</option>
+                                            <option value="350">Gibraltar (+350)</option>
+                                            <option value="30">Greece (+30)</option>
+                                            <option value="299">Greenland (+299)</option>
+                                            <option value="1473">Grenada (+1473)</option>
+                                            <option value="590">Guadeloupe (+590)</option>
+                                            <option value="671">Guam (+671)</option>
+                                            <option value="502">Guatemala (+502)</option>
+                                            <option value="224">Guinea (+224)</option>
+                                            <option value="245">Guinea - Bissau (+245)</option>
+                                            <option value="592">Guyana (+592)</option>
+                                            <option value="509">Haiti (+509)</option>
+                                            <option value="504">Honduras (+504)</option>
+                                            <option value="852">Hong Kong (+852)</option>
+                                            <option value="36">Hungary (+36)</option>
+                                            <option value="354">Iceland (+354)</option>
+                                            <option selected="" value="91">India (+91)</option>
+                                            <option value="62">Indonesia (+62)</option>
+                                            <option value="98">Iran (+98)</option>
+                                            <option value="964">Iraq (+964)</option>
+                                            <option value="972">Israel (+972)</option>
+                                            <option value="39">Italy (+39)</option>
+                                            <option value="225">Ivory Coast (+225)</option>
+                                            <option value="1876">Jamaica (+1876)</option>
+                                            <option value="81">Japan (+81)</option>
+                                            <option value="962">Jordan (+962)</option>
+                                            <option value="7">Kazakhstan (+7)</option>
+                                            <option value="254">Kenya (+254)</option>
+                                            <option value="686">Kiribati (+686)</option>
+                                            <option value="850">Korea North (+850)</option>
+                                            <option value="82">Korea South (+82)</option>
+                                            <option value="965">Kuwait (+965)</option>
+                                            <option value="996">Kyrgyzstan (+996)</option>
+                                            <option value="856">Laos (+856)</option>
+                                            <option value="371">Latvia (+371)</option>
+                                            <option value="961">Lebanon (+961)</option>
+                                            <option value="266">Lesotho (+266)</option>
+                                            <option value="231">Liberia (+231)</option>
+                                            <option value="218">Libya (+218)</option>
+                                            <option value="417">Liechtenstein (+417)</option>
+                                            <option value="370">Lithuania (+370)</option>
+                                            <option value="352">Luxembourg (+352)</option>
+                                            <option value="853">Macao (+853)</option>
+                                            <option value="389">Macedonia (+389)</option>
+                                            <option value="261">Madagascar (+261)</option>
+                                            <option value="265">Malawi (+265)</option>
+                                            <option value="60">Malaysia (+60)</option>
+                                            <option value="960">Maldives (+960)</option>
+                                            <option value="223">Mali (+223)</option>
+                                            <option value="356">Malta (+356)</option>
+                                            <option value="692">Marshall Islands (+692)</option>
+                                            <option value="596">Martinique (+596)</option>
+                                            <option value="222">Mauritania (+222)</option>
+                                            <option value="269">Mayotte (+269)</option>
+                                            <option value="52">Mexico (+52)</option>
+                                            <option value="691">Micronesia (+691)</option>
+                                            <option value="373">Moldova (+373)</option>
+                                            <option value="377">Monaco (+377)</option>
+                                            <option value="976">Mongolia (+976)</option>
+                                            <option value="1664">Montserrat (+1664)</option>
+                                            <option value="212">Morocco (+212)</option>
+                                            <option value="258">Mozambique (+258)</option>
+                                            <option value="95">Myanmar (+95)</option>
+                                            <option value="264">Namibia (+264)</option>
+                                            <option value="674">Nauru (+674)</option>
+                                            <option value="977">Nepal (+977)</option>
+                                            <option value="31">Netherlands (+31)</option>
+                                            <option value="687">New Caledonia (+687)</option>
+                                            <option value="64">New Zealand (+64)</option>
+                                            <option value="505">Nicaragua (+505)</option>
+                                            <option value="227">Niger (+227)</option>
+                                            <option value="234">Nigeria (+234)</option>
+                                            <option value="683">Niue (+683)</option>
+                                            <option value="672">Norfolk Islands (+672)</option>
+                                            <option value="670">Northern Marianas (+670)</option>
+                                            <option value="47">Norway (+47)</option>
+                                            <option value="968">Oman (+968)</option>
+                                            <option value="680">Palau (+680)</option>
+                                            <option value="507">Panama (+507)</option>
+                                            <option value="675">Papua New Guinea (+675)</option>
+                                            <option value="595">Paraguay (+595)</option>
+                                            <option value="51">Peru (+51)</option>
+                                            <option value="63">Philippines (+63)</option>
+                                            <option value="48">Poland (+48)</option>
+                                            <option value="351">Portugal (+351)</option>
+                                            <option value="1787">Puerto Rico (+1787)</option>
+                                            <option value="974">Qatar (+974)</option>
+                                            <option value="262">Reunion (+262)</option>
+                                            <option value="40">Romania (+40)</option>
+                                            <option value="7">Russia (+7)</option>
+                                            <option value="250">Rwanda (+250)</option>
+                                            <option value="378">San Marino (+378)</option>
+                                            <option value="239">Sao Tome &amp; Principe (+239)</option>
+                                            <option value="966">Saudi Arabia (+966)</option>
+                                            <option value="221">Senegal (+221)</option>
+                                            <option value="381">Serbia (+381)</option>
+                                            <option value="248">Seychelles (+248)</option>
+                                            <option value="232">Sierra Leone (+232)</option>
+                                            <option value="65">Singapore (+65)</option>
+                                            <option value="421">Slovak Republic (+421)</option>
+                                            <option value="386">Slovenia (+386)</option>
+                                            <option value="677">Solomon Islands (+677)</option>
+                                            <option value="252">Somalia (+252)</option>
+                                            <option value="27">South Africa (+27)</option>
+                                            <option value="34">Spain (+34)</option>
+                                            <option value="94">Sri Lanka (+94)</option>
+                                            <option value="290">St. Helena (+290)</option>
+                                            <option value="1869">St. Kitts (+1869)</option>
+                                            <option value="1758">St. Lucia (+1758)</option>
+                                            <option value="249">Sudan (+249)</option>
+                                            <option value="597">Suriname (+597)</option>
+                                            <option value="268">Swaziland (+268)</option>
+                                            <option value="46">Sweden (+46)</option>
+                                            <option value="41">Switzerland (+41)</option>
+                                            <option value="963">Syria (+963)</option>
+                                            <option value="886">Taiwan (+886)</option>
+                                            <option value="7">Tajikstan (+7)</option>
+                                            <option value="66">Thailand (+66)</option>
+                                            <option value="228">Togo (+228)</option>
+                                            <option value="676">Tonga (+676)</option>
+                                            <option value="1868">Trinidad &amp; Tobago (+1868)</option>
+                                            <option value="216">Tunisia (+216)</option>
+                                            <option value="90">Turkey (+90)</option>
+                                            <option value="7">Turkmenistan (+7)</option>
+                                            <option value="993">Turkmenistan (+993)</option>
+                                            <option value="1649">Turks &amp; Caicos Islands (+1649)</option>
+                                            <option value="688">Tuvalu (+688)</option>
+                                            <option value="256">Uganda (+256)</option>
+                                            <option value="44">UK (+44)</option>
+                                            <option value="380">Ukraine (+380)</option>
+                                            <option value="971">United Arab Emirates (+971)</option>
+                                            <option value="598">Uruguay (+598)</option>
+                                            <option value="1">USA (+1)</option>
+                                            <option value="7">Uzbekistan (+7)</option>
+                                            <option value="678">Vanuatu (+678)</option>
+                                            <option value="379">Vatican City (+379)</option>
+                                            <option value="58">Venezuela (+58)</option>
+                                            <option value="84">Vietnam (+84)</option>
+                                            <option value="1284">Virgin Islands - British (+1284)</option>
+                                            <option value="1340">Virgin Islands - US (+1340)</option>
+                                            <option value="681">Wallis &amp; Futuna (+681)</option>
+                                            <option value="969">Yemen (North) (+969)</option>
+                                            <option value="967">Yemen (South) (+967)</option>
+                                            <option value="381">Yugoslavia (+381)</option>
+                                            <option value="243">Zaire (+243)</option>
+                                            <option value="260">Zambia (+260)</option>
+                                            <option value="263">Zimbabwe (+263)</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-7">
+                                        <input  type="text" id="sign_up_id7" name="phone_number" class="form-control" pattern="[1-9]{1}[0-9]{9}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id10">Profession *</label>
+                            <div class="col-sm-8">
+                                <select  class="form-control" name="user_profession" id="sign_up_id10">
+                                    <option value="">Please select</option>
+                                    <option value="Architect/Construction">Architect/Construction</option>
+                                    <option value="Banking &amp; Financial services">Banking &amp; Financial services</option>
+                                    <option value="community service">community service</option>
+                                    <option value="Communications">Communications</option>
+                                    <option value="Defence Forces/Security">Defence Forces/Security</option>
+                                    <option value="Doctor/Medical Services">Doctor/Medical Services</option>
+                                    <option value="Engineering">Engineering</option>
+                                    <option value="Govt. &amp; PSU">Govt. &amp; PSU</option>
+                                    <option value="Hospitality">Hospitality</option>
+                                    <option value="Human Resources">Human Resources</option>
+                                    <option value="IT Services">IT Services</option>
+                                    <option value="Law">Law</option>
+                                    <option value="Logistics">Logistics</option>                                    
+                                    <option value="Marketing &amp; Sales">Marketing &amp; Sales</option>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    <option value="Shipping/Port Management">Shipping/Port Management</option>
+                                    <option value="Student">Student</option>                                    
+                                    <option value="Teaching/Training">Teaching/Training</option>
+                                    <option value="Telecom Services">Telecom Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="sign_up_id8">Areas of Interest *</label>
+                            <div class="col-sm-8">
+                                <select  class="form-control" id="sign_up_id8" name="user_area_of_interest">
+                                    <option value="">Please select</option>
+                                    <option value="Animal Husbandry">Animal Husbandry</option> 
+                                    <option value="Arts &amp; Culture">Arts &amp; Culture</option>
+                                    <option value="Defense">Defense</option>
+                                    <option value="Economy &amp; Finance">Economy &amp; Finance</option>
+                                    <option value="Education">Education</option>
+                                    <option value="Environment">Environment/Conservation</option>                                     
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Politics">Politics</option>
+                                    <option value="Spirituality">Spirituality</option>                                    
+                                    <option value="Technology">Technology</option>                                    
+                                    <option value="Tourism">Tourism</option>
+                                    <option value="Women Empowerment">Women Empowerment</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-sm-4 control-label" for="datepickers">Date of Birth *</label>
+                            <div class="col-sm-8">
+                                <div class="input-group input-append date" id="datePicker45t">
+                                    <input type="text" id="datepickers" class="form-control" name="user_date_of_birth">
+                                    <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span> </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group">
+                            <div class="col-sm-4"></div>
+                            <div class="col-sm-8">
+                                <input type="submit" id="user_register_submit" class="btn btn-lg btn-warning customLoginBtn" name="register" value="Sign Up">
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="modal-footer loginsignupAnchor">
+                        <p>Already have an account? <a onclick="LoginPopup()" href="javascript:void(0)">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .datepicker {
+        z-index:99999 !important;
+    }
+    #Forgot {
+        display: none
+    }
+</style>
+<script>
+
+    $(".fb_login").click(function () {
+        setreferrerUrl();
+    });
+    $(".twt_login").click(function () {
+        setreferrerUrl();
+    });
+
+    $("#forgot").click(function () {
+        $("div#Login").css({
+            "display": "none",
+        });
+        $("div#Forgot").css({
+            "display": "block",
+        });
+        $("div#ForgotPopup").css({
+            "display": "block",
+        });
+    });
+    function clevertapLogininfo() {
+        var LoginForm = $("#email_address").val();
+        // each of the below mentioned fields are optional
+// with the exception of one of Identity, Email, FBID or GPID
+        clevertap.onUserLogin.push({
+            "Site": {
+                "Email": LoginForm, // String
+//   "MSG-email": false,                // Disable email notifications
+//   "MSG-push": true,                  // Enable push notifications
+//   "MSG-sms": true                    // Enable sms notifications
+            }
+        });
+
+    }
+
+</script>        
+<div class="search">
+            <a href="#" id="searchbox"><span>Search <img   src="https://staticmain.narendramodi.in/images/searchIcon.jpg"   alt="Search"/></span></a>
+        <div id="access_searchbox">
+        <div class="searchDDarrow"></div>
+        <div class="form">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="form-group">
+                        <label for="enterkeyword" class="sr-only"> Enter Keyword </label>
+                        <input type="text" placeholder="Enter Keyword" onkeypress="getAutocomplete('globalkeyword')" class="form-control srch" id="globalkeyword">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="searchfrom" class="sr-only"> From </label>
+                        <input type="text" placeholder="From" class="form-control" id="globalfromdate">
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="form-group">
+                        <label for="searchto" class="sr-only"> To </label>
+                        <input type="text" placeholder="To" class="form-control" id="globaltodate">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12" id="searchbtn">
+                    <input type="button" value="Go" onclick="globalSearch()" class="commonBtn  btn btn-animated btn-split rippler rippler-default">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <input type="hidden" id="globallang" value="en"/>
+    
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#globalfromdate").datepicker();
+        $("#globaltodate").datepicker();
+    });
+    function globalSearch()
+    {
+        var globalkeyword = $("#globalkeyword").val().replace(/#/i, "");
+        var globalfromdate = $("#globalfromdate").val();
+        var gloabaltodate = $("#globaltodate").val();
+        var globallang = $("#globallang").val();
+        var url = JS_BASE_URL + "news?&keyword=" + globalkeyword + "&fromdate=" + globalfromdate + "&todate=" + gloabaltodate;
+        console.log(url);
+        window.location.href = url;
+    }
+    $("#globalkeyword").keyup(function (event) {
+        if (event.keyCode == 13) {
+            globalSearch();
+        }
+    });
+    $("#globalfromdate").keyup(function (event) {
+        if (event.keyCode == 13) {
+            globalSearch();
+        }
+    });
+    $("#globaltodate").keyup(function (event) {
+        if (event.keyCode == 13) {
+            globalSearch();
+        }
+    });
+
+
+</script>
+                  
+                    <div  class="lang"><a href="#" id="nmlang"><span data-hover="English ">English </span> <img class="lng"   src="https://staticmain.narendramodi.in/images/langIcon.jpg"   alt="language"/></a>
+
+                        <ul id="access_lang_items">
+                            <div class= "LanguageDDarrow"></div>
+                            <li>
+                                <div class="row">
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/text-of-pm-s-speech-at-economic-times-global-business-summit-">English</a></div>
+                                                                        <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/gu/text-of-pm-s-speech-at-economic-times-global-business-summit-">Gujarati</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/hi/text-of-pm-s-speech-at-economic-times-global-business-summit-">हिन्दी</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/be/text-of-pm-s-speech-at-economic-times-global-business-summit-">Bengali</a></div>
+                                   <!--<div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/sanskrit/text-of-pm-s-speech-at-economic-times-global-business-summit-">Sanskrit</a></div>-->
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/ka/text-of-pm-s-speech-at-economic-times-global-business-summit-">Kannada</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/ma/text-of-pm-s-speech-at-economic-times-global-business-summit-">Malayalam</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/te/text-of-pm-s-speech-at-economic-times-global-business-summit-">Telugu</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/ta/text-of-pm-s-speech-at-economic-times-global-business-summit-">Tamil</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/mar/text-of-pm-s-speech-at-economic-times-global-business-summit-">Marathi</a></div>
+                                    <!--<div class="col-sm-6 langitem"><a href="<? BASE_URL . "lng/punjabi" ?>">Punjabi</a></div>-->
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/asm/text-of-pm-s-speech-at-economic-times-global-business-summit-">Assamese</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/man/text-of-pm-s-speech-at-economic-times-global-business-summit-">Manipuri</a></div>
+                                    <!--<div class="col-sm-6 langitem"><a href="<? BASE_URL . "lng/russian" ?>">Russian</a></div>-->
+                                    <!--<div class="col-sm-6 langitem"><a href="<? BASE_URL . "lng/japanese" ?>">Japanese</a></div>-->
+                                    <!--<div class="col-sm-6 langitem"><a href="<? BASE_URL . "lng/chinese" ?>">Chinese</a></div>-->
+                                    <!--<div class="col-sm-6 langitem"><a href="<? BASE_URL . "lng/spanish" ?>">Spanish</a></div>-->
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/od/text-of-pm-s-speech-at-economic-times-global-business-summit-">Odia</a></div>
+                                    <div class="col-sm-6 langitem"><a href="https://www.narendramodi.in/ur/text-of-pm-s-speech-at-economic-times-global-business-summit-">اردو</a></div> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                        </div>
+    <!--Menu-->
+    <div class="centerAlign" id="menu">
+                    <div class="link">
+                                    <ul class="space cust ">
+                        <li class="title" style="text-align: left">ABOUT NM</li>
+                                                    <li><a href="https://www.narendramodi.in/categories/biography"  class="rippler rippler-default" style="text-align: left"><span data-hover="Biography">Biography</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/bjp-for-a-strong-stable-inclusive-prosperous-india-6205"  class="rippler rippler-default" style="text-align: left"><span data-hover="BJP Connect">BJP Connect</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/peoplescorner"  class="rippler rippler-default" style="text-align: left"><span data-hover="People’s Corner">People’s Corner</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/categories/timeline"  class="rippler rippler-default" style="text-align: left"><span data-hover="Timeline">Timeline</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">NEWS</li>
+                                                    <li><a href="https://www.narendramodi.in/news"  class="rippler rippler-default" style="text-align: left"><span data-hover="News Updates">News Updates</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/media-coverage"  class="rippler rippler-default" style="text-align: left"><span data-hover="Media Coverage">Media Coverage</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/reflections"  class="rippler rippler-default" style="text-align: left"><span data-hover="Reflections">Reflections</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/newsletter"  class="rippler rippler-default" style="text-align: left"><span data-hover="Newsletter">Newsletter</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">TUNE IN</li>
+                                                    <li><a href="https://www.narendramodi.in/mann-ki-baat"  class="rippler rippler-default" style="text-align: left"><span data-hover="Mann Ki Baat">Mann Ki Baat</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/watch-live"  class="rippler rippler-default" style="text-align: left"><span data-hover="Watch Live">Watch Live</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">GOVERNANCE</li>
+                                                    <li><a href="https://www.narendramodi.in/categories/governance"  class="rippler rippler-default" style="text-align: left"><span data-hover="Governance Paradigm">Governance Paradigm</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/categories/global-recognition"  class="rippler rippler-default" style="text-align: left"><span data-hover="Global Recognition">Global Recognition</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/category/infographics"  class="rippler rippler-default" style="text-align: left"><span data-hover="Infographics">Infographics</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/insights/india-first"  class="rippler rippler-default" style="text-align: left"><span data-hover="Insights">Insights</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">CATEGORIES</li>
+                                                    <li><a href="https://www.narendramodi.in/internationalmainhtml"  class="rippler rippler-default" style="text-align: left"><span data-hover="International">International</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/oneyear"  class="rippler rippler-default" style="text-align: left"><span data-hover="One Year">One Year</span></a></li>
+                                                    <li><a href="http://actionandhope.narendramodi.in/" target="__blank" class="rippler rippler-default" style="text-align: left"><span data-hover="Action & Hope">Action & Hope</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/varanasi"  class="rippler rippler-default" style="text-align: left"><span data-hover="Varanasi">Varanasi</span></a></li>
+                                                    <li><a href="http://yogaday.narendramodi.in/home" target="__blank" class="rippler rippler-default" style="text-align: left"><span data-hover="International Day Of Yoga">International Day Of Yoga</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">NM THOUGHTS</li>
+                                                    <li><a href="https://www.narendramodi.in/examwarriors"  class="rippler rippler-default" style="text-align: left"><span data-hover="Exam Warriors">Exam Warriors</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/category/quotes"  class="rippler rippler-default" style="text-align: left"><span data-hover="Quotes">Quotes</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/speeches"  class="rippler rippler-default" style="text-align: left"><span data-hover="Speeches">Speeches</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/category/text-speeches"  class="rippler rippler-default" style="text-align: left"><span data-hover="Text Speeches">Text Speeches</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/categories/interviews"  class="rippler rippler-default" style="text-align: left"><span data-hover="Interviews">Interviews</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/blog"  class="rippler rippler-default" style="text-align: left"><span data-hover="Blog">Blog</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust ">
+                        <li class="title" style="text-align: left">NM LIBRARY</li>
+                                                    <li><a href="https://www.narendramodi.in/category/ebooks"  class="rippler rippler-default" style="text-align: left"><span data-hover="Ebooks">Ebooks</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/author-poet-and-lot-morelife-beyond-politics-3127"  class="rippler rippler-default" style="text-align: left"><span data-hover="Poet & Author">Poet & Author</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/category/stalwarts-2"  class="rippler rippler-default" style="text-align: left"><span data-hover="Stalwarts">Stalwarts</span></a></li>
+                                                    <li><a href="https://www.narendramodi.in/e-greetings"  class="rippler rippler-default" style="text-align: left"><span data-hover="E-Greetings">E-Greetings</span></a></li>
+                           
+                    </ul>    
+                                        <ul class="space cust cust1">
+                        <li class="title" style="text-align: left">CONNECT</li>
+                                                    <li><a href="http://www.pmindia.gov.in/en/interact-with-honble-pm/" target="__blank" class="rippler rippler-default" style="text-align: left"><span data-hover="Write to PM">Write to PM</span></a></li>
+                                                    <li><a href="https://www.mygov.in/" target="__blank" class="rippler rippler-default" style="text-align: left"><span data-hover="Serve The Nation">Serve The Nation</span></a></li>
+                           
+                    </ul>    
+                                </div>
+                <style>
+            .link .cust{    width: 113px !important;padding-left: 15px;padding-right: 15px;}
+            .link .cust1{border-right: none;}
+        </style>
+        <div class="connectfooter">
+            <ul id="social">
+                <a href="https://www.facebook.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/1.png);">&nbsp;</li>
+                </a> <a href="https://twitter.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/2.png);">&nbsp;</li>
+                </a> <a href="https://plus.google.com/+NarendraModi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/3.png);">&nbsp;</li>
+                </a> <a href="https://www.youtube.com/user/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/4.png);">&nbsp;</li>
+                </a> <a href="https://www.pinterest.com/NarendraModi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/5.png);">&nbsp;</li>
+                </a> <a href="https://www.flickr.com/photos/92359345@N07" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/6.png);">&nbsp;</li>
+                </a> <a href="http://narendra-modi.tumblr.com/" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/7.png);">&nbsp;</li>
+                </a> <a href="http://www.stumbleupon.com/stumbler/Narendra-Modi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/10.png);">&nbsp;</li>
+                </a> <a href="https://in.linkedin.com/in/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/8.png);">&nbsp;</li>
+                </a> <a href="https://instagram.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/9.png);">&nbsp;</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+</header>
+<script type="text/javascript">
+//    var clevertap = {event: [], profile: [], account: [], onUserLogin: [], notifications: []}; //stage website
+    var clevertap = {event: [], profile: [], region: 'in', account: [], onUserLogin: [], notifications: []}; //www/live website
+    // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+    clevertap.account.push({"id": CLEVERTAP_ACCOUNT_ID});
+    function social_login_redirect() {
+
+        if (getCookie('login_social') != "") {
+            // They've been here before.
+            deleteCookie('login_social');
+            location.reload();
+        }
+    }
+    social_login_redirect();
+
+</script>        <div class="clear"></div>
+                </div>
+
+        <!--			<div class="container">-->
+         <div align="center" id="search_loader" class="loadingImg_search" style="display:none;">
+            <div class="loader">
+            
+            <img src="https://staticmain.narendramodi.in/images/loading.gif" width="100"  />
+            </div>
+            </div> 
+        
+        <div class="row">
+           
+            
+    <div class="page_error">
+        <img src="https://staticmain.narendramodi.in/images/404_blue.png" alt="">
+
+        <br><br>
+        <div class="clearfix"></div>
+        <a href="https://www.narendramodi.in/">
+            <div class="UnsubscribeBtn ">
+                <!--<button class="btn btn-warning">Go back</button>-->
+
+                <a class="readMoreButton btn-animated btn-split rippler rippler-default" data-text="Go back" href="https://www.narendramodi.in/"><span>Go back</span></a>
+            </div>
+        </a>
+        <!--        <div>
+                            </div>-->
+    </div>
+
+ 
+        </div>
+        <!--</div>-->
+          <div id="social-tabs"></div>
+</main>
+        <footer class="wow fadeInUp">
+    <div class="centerAlign">
+                    <div class="link">
+                <ul class="home">
+                    <li class="title">HOME</a></li>
+                                            <li><a href="#" data-toggle="modal" onclick="LoginPopup()" data-target="#loginModal" class="rippler rippler-default"><span data-hover="Login">Login</span></a></li>
+
+                                            <li><a href="https://www.narendramodi.in/subscribe#signup" class="rippler rippler-default"><span data-hover="Register">Register</span></a></li>
+                    <li><a href="https://www.narendramodi.in/subscribe#signup" class="rippler rippler-default"><span data-hover="Subscribe">Subscribe</span></a></li>
+                </ul>
+                <ul class="space">
+                    <li class="title">About NM</li>
+
+                    <li><a href="https://www.narendramodi.in/categories/biography" class="rippler rippler-default"><span data-hover="Biography">Biography</span></a></li>
+                    <!--<li><a href="<?  BASE_URL . '/shri-narendra-modi-prime-minister-of-india-7814' ?>" class="rippler rippler-default"><span data-hover="Profile">Profile</span></a></li>-->   
+                    <!--<li><a href="<? BASE_URL . 'administrator-7813' ?>" class="rippler rippler-default"><span data-hover="Administrator">Administrator</span></a></li>-->
+                    <li><a href="https://www.narendramodi.in/bjp-for-a-strong-stable-inclusive-prosperous-india-6205" class="rippler rippler-default"><span data-hover="BJP Connect">BJP Connect</span></a></li>
+                </ul>
+                <ul class="space news">
+                    <li class="title">NEWS</li>
+                    <li><a href="https://www.narendramodi.in/news" class="rippler rippler-default"><span data-hover="News Updates">News Updates</span></a></li>
+                    <li><a href="https://www.narendramodi.in/media-coverage" class="rippler rippler-default"><span data-hover="Media Coverage">Media Coverage</span></a></li>
+                    <li><a href="https://www.narendramodi.in/reflections" class="rippler rippler-default"><span data-hover="Reflections">Reflections</span></a></li>
+                    <li><a href="https://www.narendramodi.in/newsletter" target="_blank" class="rippler rippler-default"><span data-hover="Newsletter">Newsletter</span></a></li>
+                </ul>
+                <ul class="space tunein">
+                    <li class="title">TUNE IN</li>
+                    <li><a href="https://www.narendramodi.in/mann-ki-baat" class="rippler rippler-default"><span data-hover="Mann Ki Baat">Mann Ki Baat</span></a></li>
+                    <li><a href="https://www.narendramodi.in/watch-live" class="rippler rippler-default"><span data-hover="Watch Live">Watch Live</span></a></li>
+                </ul>
+                <ul class="space goverance">
+                    <li class="title">GOVERNANCE</li>
+          <!--          <li><a href="<?BASE_URL.'watch-live'?>" class="rippler rippler-default"><span data-hover="Flagship Schemes">Flagship Schemes</span></a></li>-->
+                    <li><a href="https://www.narendramodi.in/categories/governance" class="rippler rippler-default"><span data-hover="Governance Paradigm">Governance Paradigm</span></a></li>
+                    <li><a href="https://www.narendramodi.in/categories/global-recognition" class="rippler rippler-default"><span data-hover="Global Recognition">Global Recognition</span></a></li>
+                    <li><a href="https://www.narendramodi.in/category/infographics" class="rippler rippler-default"><span data-hover="Infographics">Infographics</span></a></li>
+                </ul>
+                <ul class="space categories">
+                    <li class="title">Categories</li>
+                    <li><a href="https://www.narendramodi.in/internationalmainhtml" class="rippler rippler-default"><span data-hover="International">International</span></a></li>
+                    <li><a href="https://www.narendramodi.in/oneyear" target="_blank" class="rippler rippler-default"><span data-hover="One Year">One Year</span></a></li>
+                    <li><a href="https://twoyears.mygov.in/" target="_blank" class="rippler rippler-default"><span data-hover="Two Year">Two Year</span></a></li>
+                    <li><a href="http://actionandhope.narendramodi.in" target="_blank" class="rippler rippler-default"><span data-hover="Action & Hope">Action & Hope</span></a></li>
+                    <li><a href="https://www.narendramodi.in/varanasi" target="_blank" class="rippler rippler-default"><span data-hover="Varanasi">Varanasi</span></a></li>
+                    <li><a href="http://yogaday.narendramodi.in/home"class="rippler rippler-default" target="_blank"><span data-hover="International Day Of Yoga">International Day Of Yoga</span></a></li>
+                </ul>
+                <ul class="space thoughts">
+                    <li class="title">NM Thoughts</li>
+                    <li><a href="https://www.narendramodi.in/category/quotes" class="rippler rippler-default"><span data-hover="Quotes">Quotes</span></a></li>
+                    <li><a href="https://www.narendramodi.in/speeches" class="rippler rippler-default"><span data-hover="Speeches">Speeches</span></a></li>
+                    <li><a href="https://www.narendramodi.in/category/text-speeches" class="rippler rippler-default"><span data-hover="Text Speeches">Text Speeches</span></a></li>
+                    <li><a href="https://www.narendramodi.in/categories/interviews" class="rippler rippler-default"><span data-hover="Interviews">Interviews</span></a></li>
+                    <li><a href="https://www.narendramodi.in/categories/timeline" class="rippler rippler-default"><span data-hover="Timeline">Timeline</span></a></li>
+                    <li><a href="https://www.narendramodi.in/blog" class="rippler rippler-default"><span data-hover="Blog">Blog</span></a></li>
+                </ul>
+                <ul class="space Library">
+                    <li class="title">NM Library</li>
+                    <li><a href="https://www.narendramodi.in/category/ebooks" class="rippler rippler-default"><span data-hover="Ebooks">Ebooks</span></a></li>
+                    <li><a href="https://www.narendramodi.in/author-poet-and-lot-morelife-beyond-politics" class="rippler rippler-default"><span data-hover="Poet & Author">Poet & Author</span></a></li>
+                    <li><a href="https://www.narendramodi.in/category/stalwarts-2" class="rippler rippler-default"><span data-hover="Stalwarts">Stalwarts</span></a></li>
+                    <li><a href="https://www.narendramodi.in/downloads" class="rippler rippler-default"><span data-hover="Gallery">Gallery</span></a></li>
+                    <!--<li><a href="<? BASE_URL . 'category/event' ?>" class="rippler rippler-default"><span data-hover="Events">Events</span></a></li>-->
+                    <li><a href="https://www.narendramodi.in/e-greetings" class="rippler rippler-default"><span data-hover="E-Greetings">E-Greetings</span></a></li>
+                </ul>
+            </div>
+                    <div class="connectfooter">
+                            <p>Connect with the PM</p>
+                        <ul id="social">
+                <a href="https://www.facebook.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/fb.png);">&nbsp;</li>
+                </a> <a href="https://twitter.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/t.png);">&nbsp;</li>
+                </a> <a href="https://plus.google.com/+NarendraModi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/g.png);">&nbsp;</li>
+                </a> <a href="https://www.youtube.com/user/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/yt_1.png);">&nbsp;</li>
+                </a> <a href="https://www.pinterest.com/NarendraModi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/pin.png);">&nbsp;</li>
+                </a> <a href="https://www.flickr.com/photos/92359345@N07" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/o_1.png);">&nbsp;</li>
+                </a> <a href="http://narendra-modi.tumblr.com/" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/t_1.png);">&nbsp;</li>
+                </a> <a href="http://www.stumbleupon.com/stumbler/Narendra-Modi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/omega.png);">&nbsp;</li>
+                </a> <a href="https://in.linkedin.com/in/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/in_1.png);">&nbsp;</li>
+                </a> <a href="https://instagram.com/narendramodi" target="_blank">
+                    <li style="background:url(https://staticmain.narendramodi.in/images/cam_1.png);">&nbsp;</li>
+                </a>
+            </ul>
+        </div>
+        <!--        <div class="rightfooter">
+                    <p><a href="#">Site Map&nbsp;&nbsp;|&nbsp;&nbsp;Terms & Conditions</a></p>
+                </div>-->
+    </div>
+
+
+
+</footer>
+
+<script>
+
+    $('.nmAppClose').click(function (e) {
+        $('.nmapp-container').hide(500);
+
+    });
+
+
+
+</script>
+<a href="javascript:void(0);" class="scrollToTop">&nbsp;</a>
+<script>
+//    var dataPostUrl = 'http://13.126.147.236/phptesting/';
+    var dataPostUrl = 'https://www.dailyobjects.com/';
+    var loggedUserEncId = "";
+    $(window).load(function () {
+        var x = getCookie('referer_url_redirect');
+        var cookieName = 'referer_url_redirect';
+        if (x == "referer_url_redirect") {
+            deleteCookie(cookieName);
+            if (loggedUserEncId != '') {
+                getgoredirect();
+            }
+        }
+    });
+
+
+    function post(path, params, method) {
+        method = method || "post"; // Set method to post by default if not specified.
+
+
+
+        var form = document.createElement("form");
+        form.setAttribute("method", method);
+        form.setAttribute("action", path);
+
+        for (var key in params) {
+            if (params.hasOwnProperty(key)) {
+                var hiddenField = document.createElement("input");
+                hiddenField.setAttribute("type", "hidden");
+                hiddenField.setAttribute("name", key);
+                hiddenField.setAttribute("value", params[key]);
+
+                form.appendChild(hiddenField);
+            }
+        }
+
+        document.body.appendChild(form);
+        form.submit();
+    }
+    function getgoredirect() {
+        if (loggedUserEncId != '') {
+            post(dataPostUrl, {userid: loggedUserEncId});
+        } else {
+            $('#nmlogin').trigger('click');
+            setCookie('referer_url_redirect', 'referer_url_redirect', 2);
+        }
+    }
+    function getbdayredirect() {
+        if (loggedUserEncId != '') {
+            window.location.href = JS_BASE_URL + 'birthday2018';
+        } else {
+            $('#nmlogin').trigger('click');
+            setCookie('referer_url_redirect_bday', 'referer_url_redirect_bday', 2);
+        }
+    }
+</script>                </body>
+</html>
