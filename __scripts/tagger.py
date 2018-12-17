@@ -10,32 +10,7 @@
 # from matplotlib import pylab
 import sys
 import os
-
-from nltk.probability import FreqDist
 from Util import loadtext, cleaner, toJSON, en_check
-
-
-
-
-
-
-
-def mostCommonWord(clean_words, length):
-    '''
-    @Description : Take length of most common word
-                    Print most common words
-
-    '''
-    fdist = FreqDist(clean_words)
-    mostCommon = fdist.most_common(length)
-    return mostCommon
-
-
-
-
-
-
-
 
 # program Execution starts here
 if __name__ == "__main__":
@@ -47,36 +22,29 @@ if __name__ == "__main__":
     dest_path = os.path.abspath(sys.argv[2])
 
     # load text for processing
-    raw_data = loadtext(root_path)
-    clean_words = cleaner(raw_data)
-
-    # compute hind/english words
-    en=0
-    hn=0
-    hn_list=[]
-    for word in clean_words:
-        if en_check(word):
-            en+=1
+    data_list = loadtext(root_path)
+    clean_words = cleaner(data_list)
+    en = {}
+    hn = {}
+    for i in clean_words:
+        if en_check(i):
+            if i in en:
+                en[i] += 1
+            else:
+                en[i] = 1
         else:
-            hn+=1
-            hn_list.append(word)
+            if i in hn:
+                hn[i] += 1
+            else:
+                hn[i] = 1
 
-    # Saving json data
     master = {
         "meta": {
-            "total_english": en,
-            "total_hindi": hn
+            "total_english": len(en),
+            "total_hindi": len(hn)
         },
-        "en": mostCommonWord(clean_words,20),
-        "hn": hn_list
+        "en": en,
+        "hn": hn
     }
-    print(master)
+    print(clean_words)
     toJSON(master, dest_path)
-    
-   # mostCommonWord(clean_words,10)
-
-
-
-
-
-    
